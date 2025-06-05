@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Lady Of Good Counsel & Shrine Of St. Anthony Of Padua</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Logo overlapping header -->
+  <div class="header-logo-outer">
+    <div class="header-logo"></div>
+  </div>
+  <!-- Header with logo spanning both colors and updated nav groups -->
+  <header class="header">
+    <div class="header-white">
+      <div class="header-split-row">
+        <div class="header-left">Our Lady of Good Counsel Church</div>
+        <div class="header-right">Shrine of St. Anthony of Padua</div>
+        <button class="hamburger" id="hamburger-menu" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="header-logo-overlap"><img src="images/logo.png" alt="Church Logo" class="header-logo-img"></div>
+    </div>
+    <nav class="nav nav-split" id="main-nav">
+      <div class="nav-group nav-group-left">
+        <a href="#" class="active">Home</a>
+        <a href="#parish-history">About Us</a>
+        <a href="#" id="events-link">Events</a>
+        <a href="#" id="gallery-link">Gallery</a>
+      </div>
+      <div class="nav-group nav-group-right">
+        <a href="#donations">Donations</a>
+        <a href="#mass-timings">Mass Timings</a>
+        <a href="#footer">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Carousel -->
+  <section class="hero">
+    <div class="carousel">
+      <div class="carousel-slide active">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Welcome">
+        <div class="carousel-caption">Welcome to Our Parish</div>
+      </div>
+      <div class="carousel-slide">
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80" alt="Join Us">
+        <div class="carousel-caption">Join Us in Faith & Community</div>
+      </div>
+      <div class="carousel-slide">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80" alt="All Are Welcome">
+        <div class="carousel-caption">All Are Welcome</div>
+      </div>
+      <div class="carousel-controls">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message from Parish Priest -->
+  <section class="priest-message-flex">
+    <div class="priest-message-text">
+      <h2>A message from our Parish Priest, Fr. Tony Dias</h2>
+      <p>Welcome, dear brothers and sisters in faith. In the embrace of God's love, we gather as one family—united in grace, strengthened in hope, and called to walk in His light. Here, in this sacred space, may you find peace for your soul, wisdom for your journey, and community in Christ's unfailing love. Whether you seek comfort, renewal, or purpose, know that you are cherished, and that His arms are always open. May our time together be filled with faith, compassion, and the joy of serving Him. Welcome home.<br><br>As we walk this path of faith, let us remember that God's love is boundless and His mercy never fades. No burden is too great, no heart too broken that He cannot restore. Take heart, for you are never alone. Through prayer, service, and fellowship, we grow together as a family in Christ, shining His light into the world. May this church be not just a place of worship, but a sanctuary of healing, hope, and transformation. May you always find His presence here.</p>
+    </div>
+    <div class="priest-photo-placeholder"></div>
+  </section>
+
+  <!-- Features: Daily Readings & Announcements -->
+  <section class="features">
+    <div class="feature">
+      <h4>Daily Readings</h4>
+      <div class="cg_mrc_widget"></div>
+      <script src="https://cdn1.catholicgallery.org/wp-content/uploads/widgets/rich-card/cg_mrc_widget.js" async></script>
+    </div>
+    <div class="feature">
+      <h4>Weekly Announcements</h4>
+      <a href="https://drive.google.com/file/d/1YIeCkY77x-D94XNb8qc9ixF9ooKN04UL/view?usp=drive_link" target="_blank" class="weekly-announcement-btn">Read Weekly Announcements (PDF)</a>
+      <button class="novena-timetable-btn" id="open-novena-modal">JUNE- Novena to St.Anthony at the Shrine of St.Anthony (click for timetable)</button>
+    </div>
+  </section>
+
+  <!-- Email Subscription -->
+  <section class="subscription">
+    <h4>Subscribe for Weekly Notices</h4>
+    <form action="https://formspree.io/f/xjkrvjyw" method="POST">
+      <input type="email" name="email" id="subscribe-email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    <div id="subscribe-msg"></div>
+  </section>
+
+  <!-- Mass Timings & Novena -->
+  <section class="mass-timings-enhanced" id="mass-timings">
+    <h4>Mass Timings</h4>
+    <div class="mass-timings-grid">
+      <div class="mass-card">
+        <h5>Sunday</h5>
+        <ul>
+          <li>8:00 am – English</li>
+          <li>9:15 am – English <span class="note">(Marathi on last Sunday of the month)</span></li>
+          <li>10:30 am – Tamil</li>
+          <li>6:15 pm – English</li>
+        </ul>
+      </div>
+      <div class="mass-card">
+        <h5>Weekdays</h5>
+        <ul>
+          <li>6:15 am – English</li>
+          <li>7:00 pm – English</li>
+          <li>Saturday 7:00 pm – Sunday Liturgy Mass</li>
+        </ul>
+      </div>
+      <div class="mass-card">
+        <h5>Novena to St. Anthony (Tuesday)</h5>
+        <ul>
+          <li>6:00 am – English</li>
+          <li>6:45 am – English</li>
+          <li>7:30 am – English</li>
+          <li>5:00 pm – English</li>
+          <li>7:00 pm – English</li>
+          <li>4:00 pm – Tamil</li>
+          <li>6:00 pm – Konkani</li>
+        </ul>
+      </div>
+      <div class="mass-card">
+        <h5>First Friday (Monthly)</h5>
+        <ul>
+          <li>3:30 pm – Holy Hour (Tamil)</li>
+          <li>4:30 pm – Mass (Tamil)</li>
+          <li>6:00 pm – Holy Hour (English)</li>
+          <li>7:00 pm – Mass (English)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prayer Requests & Donations -->
+  <section class="prayer-donations">
+    <div class="prayer-request">
+      <h4>Prayer Request</h4>
+      <form action="https://formspree.io/f/mnnvqlpp" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <textarea name="message" placeholder="Your Prayer Request" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="donations" id="donations">
+      <h4>Donations</h4>
+      <div class="donation-details">
+        <p><strong>Account Name:</strong> OLGC Church</p>
+        <p><strong>Account Number:</strong> 0112101066812</p>
+        <p><strong>Bank:</strong> Canara Bank</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parish History -->
+  <section class="parish-history-card" id="parish-history">
+    <h4>Parish History – "Humble Beginnings"</h4>
+    <p>The parish of Our Lady of Good Counsel was created in 1949 and handed over to the care of the Franciscans of the English Province of the Order. At that time there stood on the hill a small chapel dedicated to Our Lady of Good Counsel, which was a subsidiary chapel of St. Michael's Church, Mahim.
+    <br><br>
+    It is not known when that chapel was built. But there are two grave-stones of a Pereira family still to be seen embedded in the front patio of the present church, which were formerly in the floor of the old chapel. One of them is in memory of Fr. Ignacio Pereira who died in 1810. Presumably the old chapel was built a few decades before this. Or perhaps, the remains of the deceased were transferred to this chapel later on. For many years the chapel was visited occasionally by a priest who said Mass for the few Catholics living around. The first resident chaplain was appointed in 1919. There is a register of Baptisms with entries in Portuguese from the year 1919, and a Register of Marriages from the year 1939.
+    <br><br>
+    The present new church was built and blessed in 1995 when Fr. Blaise Lobo, ofm happy memory was the parish priest. Fr. Christopher Coelho, ofm designed the beautiful stained glass windows to commemorate the Franciscan martyrs of Thane who gave their lives for their Faith in April 1321. He added to these the portraits of St. Gonsalo Garcia of Bassein (martyred in Japan in 1597), and of St. Alphonsa (a Franciscan sister of Kerala) who died in holiness in 1946. The stained glass panels depicting St. Francis of Assisi's Canticle of Brother Sun and the Peace Prayer are also designed by the same artist.
+    <br><br>
+    Good Counsel Church is also a shrine known all over Mumbai for the Tuesday Novena Devotions to St.Anthony. The first recorded entry of these devotions being held here is on the 14th of April, 1953. Today there are five services in English and one each in Tamil and Konkani held every Tuesday. Hundreds of devotees attend. A special novena is conducted in June to prepare for the feast of the Saint, and the feast day itself attracts thousands of worshippers.
+    <br><br>
+    (Data collected by Fr. Fidelis D'Lima, ofm)</p>
+  </section>
+
+  <!-- Patron Saint -->
+  <section class="patron-saint-flex">
+    <div class="patron-saint-text">
+      <h4>Patron Saint – St. Anthony Of Padua</h4>
+      <p>Saint Anthony of Padua, one of the most revered saints in Christianity, is celebrated for his profound wisdom, unwavering faith, and miraculous deeds. Born in Lisbon, Portugal, in 1195, he initially joined the Augustinian Order but later became a Franciscan, inspired by the martyrdom of fellow friars. His devotion to God and his ability to preach with extraordinary eloquence earned him the title of Doctor of the Church.<br><br>
+      Saint Anthony is widely known as the patron saint of lost things, but his influence extends far beyond that. His teachings emphasized humility, charity, and unwavering trust in divine providence. His sermons were so powerful that they moved even the most hardened hearts, leading many to repentance and deeper faith.<br><br>
+      The Church of Our Lady of Good Counsel & Shrine of St. Anthony in Sion, Mumbai holds a special connection to Saint Anthony. Established in 1596 by Portuguese Franciscans, the church has long been a beacon of faith and devotion. The shrine dedicated to Saint Anthony reflects his enduring legacy, offering a place for believers to seek guidance, pray for lost things, and deepen their spiritual journey.<br><br>
+      Saint Anthony's life serves as a testament to the power of faith and the importance of selfless service. His miracles, including healing the sick and multiplying food for the hungry, continue to inspire millions worldwide. His legacy remains alive in churches, shrines, and the hearts of those who turn to him in times of need.</p>
+    </div>
+    <div class="patron-saint-img">
+      <img src="images/stanthony.png" alt="St. Anthony of Padua" />
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-main" id="footer">
+    <div class="footer-blue">
+      <div class="footer-left">
+        <div class="footer-church-title">Our Lady of Good Counsel and Shrine of St. Anthony of Padua</div>
+        <div class="footer-address">Sion Railway Quarters Rd, Sion Railway Colony, Sion West, Sion, Mumbai, Maharashtra 400022</div>
+        <div class="footer-section">
+          <div class="footer-heading">Church Office Timings</div>
+          <div class="footer-underline"></div>
+          <div class="footer-info">Mon–Sat: 9:00 am – 12:00 pm, 4:00 pm – 6:00 pm<br>Sunday: Closed</div>
+        </div>
+        <div class="footer-section">
+          <div class="footer-heading">Contact Information</div>
+          <div class="footer-underline"></div>
+          <div class="footer-info">Phone: (022) 2407 2324<br>Mobile: +91 98765 43210</div>
+        </div>
+        <div class="footer-section">
+          <div class="footer-heading">Mail us at</div>
+          <div class="footer-underline"></div>
+          <div class="footer-info">olgcchurchsion@gmail.com</div>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-gmaps">
+          <iframe src="https://www.google.com/maps?q=Our+Lady+of+Good+Counsel+School,+Sion&output=embed" width="370" height="410" style="border:0; border-radius:6px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copyright-row">
+        <span class="copyright-symbol">&copy;</span>
+        <span class="copyright-text">Copyright "Our Lady Of Good Counsel" | All rights reserved | Archdiocese of Bombay</span>
+      </div>
+      <div class="footer-credit">Created and Designed by CHREO</div>
+    </div>
+  </footer>
+
+  <!-- Novena Modal -->
+  <div id="novena-modal" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close" id="close-novena-modal">&times;</button>
+      <iframe src="https://drive.google.com/file/d/1pxprhdrqNt_8ktQDZ6_0NdPZBONqgS3g/preview" class="modal-pdf" allow="autoplay"></iframe>
+    </div>
+  </div>
+
+  <!-- Add Coming Soon Modal after the Novena Modal -->
+  <div id="coming-soon-modal" class="modal-overlay">
+    <div class="modal-content coming-soon-content">
+      <button class="modal-close" id="close-coming-soon-modal">&times;</button>
+      <div class="coming-soon-text">Coming Soon</div>
+    </div>
+  </div>
+</body>
+</html> 
