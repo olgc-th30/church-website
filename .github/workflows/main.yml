@@ -24,5 +24,6 @@ jobs:
           aws s3 sync . s3://olgc-youth-website --delete \
             --exclude ".git/*" \
             --exclude ".gitignore" \
-            --exclude ".gitattributes"
+            --exclude ".gitattributes" \
+            --exclude ".github/*"
 
